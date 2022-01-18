@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">sekretariat-mobilne</string>
+    <string-array name="spinnersdata">
+        <item>wybor1</item>
+        <item>wybor2</item>
+        <item>wybor3</item>
+        <item>wybor4</item>
+        <item>wybor5</item>
+    </string-array>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <Button
+            android:text="Załaduj dane"
+            android:layout_width="338dp"
+            android:layout_height="67dp" android:id="@+id/ladujDane"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.976"/>
+    <Spinner
+            android:layout_width="228dp"
+            android:layout_height="55dp" android:id="@+id/spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/ladujDane" android:layout_marginBottom="44dp"
+            android:spinnerMode="dialog" android:dropDownWidth="match_parent" android:entries="@array/spinnersdata"
+            app:layout_constraintHorizontal_bias="0.202"/>
+    <Spinner
+            android:layout_width="156dp"
+            android:layout_height="51dp" android:id="@+id/spinner2"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.145"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner" android:entries="@array/spinnersdata"
+            android:spinnerMode="dialog"/>
+    <EditText
+            android:layout_width="163dp"
+            android:layout_height="51dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toEndOf="@+id/spinner2" android:layout_marginStart="12dp"
+            android:layout_marginBottom="40dp" app:layout_constraintBottom_toTopOf="@+id/spinner"
+            android:hint="Wprowadź fraze"/>
+    <CheckBox
+            android:text="Malejąco"
+            android:layout_width="96dp"
+            android:layout_height="55dp" android:id="@+id/checkBox"
+            app:layout_constraintStart_toEndOf="@+id/spinner" android:layout_marginStart="8dp"
+            android:layout_marginBottom="48dp" app:layout_constraintBottom_toTopOf="@+id/ladujDane"/>
+    <TableLayout
+            android:layout_width="280dp"
+            android:layout_height="255dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="296dp"
+            app:layout_constraintBottom_toTopOf="@+id/ladujDane" android:id="@+id/tabela"
+            app:layout_constraintHorizontal_bias="0.58">
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
